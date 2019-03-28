@@ -1,21 +1,20 @@
 OctoPrint LDAP auth Plugin
 =========================
 
-This plugin allow users to be connected using an LDAP server.
-This system works 
+This plugin allow users to be authenticated using an LDAP server.
 
 #### Details
 
-When you try to login, OctoPrint search for user in this local database (users.yaml)
-- If it found a user, check if this user exists also on LDAP
-- If user exists on LDAP, use LDAP bind() to check login / password
-- If user not exists on LDAP, use native password system to check it
+When you try to login, OctoPrint will search for the user in its local database (users.yaml)
+- If the user is found, check if this user also exists in LDAP
+- If user exists in LDAP, use LDAP bind() to check login / password
+- If they don't exist in LDAP, use native password system to check it
 
 ======================================
 
-- If it not found a user in local database, try to connect directly on LDAP
-- If login on LDAP il OK, a new local user is added with role "user" and a random password (password should never be used)
-- User is connected
+- If it did not found a user in the local database, try to connect directly using LDAP
+- If login with LDAP succeeds, a new local user is added with role "user" and a random password (password should never be used)
+- User is then authenticated and authorized
 
 ======================================
 
@@ -40,6 +39,6 @@ accessControl:
 
 #### Installation
 
-You can install it using ```pip install https://github.com/gillg/OctoPrint-LDAP/archive/master.zip```
+You can install it using ```pip install https://github.com/BenchPressesBooks/OctoPrint-LDAP/archive/master.zip```
 
-Or with plugin manager into OctoPrint
+Or with plugin manager in OctoPrint using the zip location.

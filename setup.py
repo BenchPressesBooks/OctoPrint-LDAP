@@ -14,20 +14,20 @@ plugin_package = "octoprint_%s" % plugin_identifier
 plugin_name = "OctoPrint-LDAP"
 
 # The plugin's version. Can be overwritten within OctoPrint's internal data via __plugin_version__ in the plugin module
-plugin_version = "1.0.0"
+plugin_version = "1.1.0"
 
 # The plugin's description. Can be overwritten within OctoPrint's internal data via __plugin_description__ in the plugin
 # module
 plugin_description = "LDAP Auth provider"
 
 # The plugin's author. Can be overwritten within OctoPrint's internal data via __plugin_author__ in the plugin module
-plugin_author = "Guillaume GILL"
+plugin_author = "Braden Licastro"
 
 # The plugin's author's mail address.
-plugin_author_email = "guillaume.gill@petitchinois.net"
+plugin_author_email = "braden@fullforceapps.com"
 
 # The plugin's homepage URL. Can be overwritten within OctoPrint's internal data via __plugin_url__ in the plugin module
-plugin_url = "https://github.com/gillg/OctoPrint-LDAP"
+plugin_url = "https://github.com/BenchPressesBooks/OctoPrint-LDAP"
 
 # The plugin's license. Can be overwritten within OctoPrint's internal data via __plugin_license__ in the plugin module
 plugin_license = "AGPLv3"
